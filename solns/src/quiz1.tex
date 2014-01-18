@@ -1,0 +1,171 @@
+\documentclass {article}
+
+\usepackage {amsthm}
+\usepackage {amssymb}
+\usepackage {amsmath}
+\usepackage {fancyhdr}
+
+\usepackage[margin=1.15in]{geometry}
+
+\newenvironment{prob}[2][]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\newcommand{\softreturn}{\ \\ \relax}
+
+\thispagestyle {fancy}
+\lhead {\textbf{Name:}}
+\chead {MTH 103 \\ Section 65}
+\rhead {Quiz 1 \\ 1/16/14}
+
+\begin {document}
+
+\softreturn
+Make sure to \textbf{clearly show all your work}. Grades will be based on your intermediate steps
+as well as the final answer. Unless the problem says otherwise, give \textbf{exact answers} (not decimal approximations).
+
+\vspace {1cm}
+
+\begin {prob}{1} (4 points)
+    Solve the following linear equation, and write your solution(s) \textbf{using set notation}.
+    \[ 12x - (x+5) = 4(6-x) + 1 \]
+\end {prob}
+
+\vspace {6cm}
+
+\begin {prob}{2} (4 points)
+    You have two different kinds of lemonade. One is $8\%$ sugar and one is $15\%$ sugar.
+    The $8\%$ lemonade tastes too watered down, and the $15\%$ lemonade is too sweet, and so you 
+    decide to mix the two together. How much of each should you put into the mixture in order to
+    end up with 2 liters of lemonade with $11\%$ sugar? (\textbf{Write answers in decimal form, rounded to three places})
+\end {prob}
+
+\vspace {6cm}
+
+\softreturn
+\textbf{Amount (in liters) of 8\% lemonade}: \underline{\hspace{6cm}} \\ \\
+\textbf{Amount (in liters) of 15\% lemonade}: \underline{\hspace{6cm}}
+
+\newpage
+
+\begin {prob}{3} (4 points)
+    Solve the following rational equation and write your solution(s) \textbf{using set notation}.
+    \[ \frac{1}{x-1} + \frac{2}{x+1} = \frac{3}{x^2-1} \]
+\end {prob}
+
+\vspace {6cm}
+
+\begin {prob}{4} (4 points)
+    Solve the following equation for the variable $A$:
+    \[ B = \frac{A+B+C}{A-B} \]
+\end {prob}
+
+\vspace {6cm}
+
+\begin {prob}{5}
+    Answer the following questions from the syllabus: \\ \\
+    \begin {tabular}{cll}
+        $(a)$ & What kind of calculator is recommended for this course? & \underline{\hspace{4cm}} \\ [2ex]
+        $(b)$ & What day will we take the first exam?                   & \underline{\hspace{4cm}} \\ [2ex]
+        $(c)$ & What is the last day to drop this class with a refund?  & \underline{\hspace{4cm}} \\ [2ex]
+        $(d)$ & What sections of the book will be covered on Exam 2?    & \underline{\hspace{4cm}}
+    \end {tabular}
+\end {prob}
+
+\newpage
+
+\section* {Solutions}
+
+\vspace {1cm}
+
+\begin {prob}{1}
+    \begin {align*}
+        12x - (x+5) &= 4(6-x) + 1 \\
+        12x - x - 5 &= 4 \cdot 6 - 4x + 1 \tag{distribute} \\
+        11x - 5     &= 25 - 4x \tag{simplify both sides} \\
+        15x         &= 30 \tag{add $4x$ and add 5} \\
+        x           &= 2 \tag{divide by 15}
+    \end {align*}
+    The solution set is $\{2\}$.
+\end {prob}
+
+\vspace {1cm}
+
+\begin {prob}{2}
+    First of all, let's call the lemonade that is $8\%$ sugar ``lemonade $A$'', and let's call the lemonade
+    that is $15\%$ sugar ``lemonade $B$''. We are going to pour some of lemonade $A$ and some of lemonade $B$ 
+    into the same pitcher, and we want to end up with 2 liters of lemonade which is $11\%$ sugar.
+    The problem is to determine how much (meaning volume, in liters) of each type of lemonade we need to use.
+    The equation we will use to describe this situation
+    will describe the amount of sugar. It will be:
+    \[ \textnormal{``sugar from $A$''} + \textnormal{``sugar from $B$''} = \textnormal{``sugar from 11\% mixture''} \]
+    This just says that if we add up the amount of sugar from each type of lemonade, we should get the amount of sugar
+    in our final mixture. Let's let $x$ be the volume (in liters) of lemonade $A$ that we will need. Since lemonade $A$
+    is 8\% sugar, $0.08x$ is the volume of sugar (in liters) represented by ``sugar from $A$'' in the equation. Since
+    we want to end up with 2 liters of the final mixture, and we are already using $x$ liters of lemonade $A$, then
+    we must use $2-x$ liters of lemonade $B$. So $0.15(2-x)$ is the volume of sugar represented by
+    ``sugar from $B$'' in the equation. Finally, we want to end up with 2 liters of lemonade, which is 11\% sugar,
+    so $0.11(2 \mathrm{L}) = 0.22 \mathrm{L}$ is the amount of sugar represented by ``sugar from 11\% mixture'' on
+    the right side of the equation. So our equation to solve is:
+    \begin {align*}
+        0.08x + 0.15(2-x)   &= 0.11(2) \\
+        0.08x + 0.3 - 0.15x &= 0.22  \tag{distribute} \\
+        0.08x - 0.15x       &= 0.22 - 0.3 \tag{subtract 0.3} \\
+        -0.07x              &= -0.08 \tag{simplify} \\
+        x                   &= \frac{-0.08}{-0.07} = \frac{8}{7} \tag{divide} \\
+        x                   &\approx 1.143
+    \end {align*}
+    We have concluded that we need to use 1.143 liters of lemonade $A$. So we must use $2-x$ liters of lemonade $B$.
+    Using the value of $x$ we have just found, we see that we need $2-1.143 = 0.857$ liters of lemonade $B$. \\
+    This problem is similar to \textbf{Examples 6,7} from \textbf{Section 1.2} of the lecture notes,
+    and problems \textbf{9,10}, and \textbf{11} from the example homework problems of \textbf{Section 1.2}.
+\end {prob}
+
+\newpage
+
+\begin {prob}{3}
+    \begin {align*}
+        \frac{1}{x-1} + \frac{2}{x+1} &= \frac{3}{x^2-1} \\
+        \frac{1}{x-1} + \frac{2}{x+1} &= \frac{3}{(x-1)(x+1)} \tag{factor denominator} \\
+        &\phantom{=} \\
+        \frac{(x-1)(x+1)}{x-1} + \frac{2(x-1)(x+1)}{x+1} &= \frac{3(x-1)(x+1)}{(x-1)(x+1)} \tag{mult. by LCD:$(x-1)(x+1)$} \\
+        &\phantom{=} \\
+        (x+1) + 2(x-1) &= 3 \tag{cancel} \\
+        x + 1 + 2x - 2 &= 3 \tag{distribute} \\
+        3x - 1 &= 3 \tag{simplify} \\
+        3x &= 4 \tag{add 1} \\
+        x &= \frac{4}{3} \tag{divide}
+    \end {align*}
+    This solution doesn't violate any of the restrictions (the restrictions are that $x \neq 1$ and $x \neq -1$),
+    so the solution set is just $\left\{ \frac{4}{3} \right\}$. \\
+    For other examples like \#3, see \textbf{Examples 6,7,8} from \textbf{Section 1.1} of the lecture notes,
+    and problems \textbf{6,8} from the example homework problems of \textbf{Section 1.1}.
+\end {prob}
+
+\vspace {1cm}
+
+\begin {prob}{4}
+    \begin {align*}
+        B &= \frac{A+B+C}{A-B} \\
+        B(A-B) &= A+B+C \tag{mult. by A-B} \\
+        B \cdot A - B \cdot B &= A+B+C \tag{distribute} \\
+        BA - B^2 &= A+B+C \\
+        BA - A   &= B^2 + B + C \tag{collect A terms} \\
+        (B-1)A   &= B^2 + B + C \tag{factor} \\
+        A        &= \frac{B^2 + B + C}{B - 1} \tag{divide}
+    \end {align*}
+    For other examples like \#4, see \textbf{Examples 12,14} from \textbf{Section 1.1} of the lecture notes,
+    and problems \textbf{11} and \textbf{13} from the example homework problems at the end of \textbf{Section 1.1}
+\end {prob}
+
+\vspace {1cm}
+
+\begin {prob}{5} \ \\ \\ \relax
+    \begin {tabular}{cll}
+        $(a)$ & What kind of calculator is recommended for this course? & \underline{TI 83/84} \\ [2ex]
+        $(b)$ & What day will we take the first exam?                   & \underline{January 30} \\ [2ex]
+        $(c)$ & What is the last day to drop this class with a refund?  & \underline{January 31} \\ [2ex]
+        $(d)$ & What sections of the book will be covered on Exam 2?    & \underline{1.7 - 3.1}
+    \end {tabular}
+\end {prob}
+
+\end {document}
